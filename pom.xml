@@ -44,13 +44,13 @@
 			<artifactId>cucumber-java</artifactId>
 			<version>7.15.0</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit 
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-junit</artifactId>
 			<version>7.15.0</version>
 			<scope>test</scope>
-		</dependency>
+		</dependency>  -->
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-jvm-deps -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
@@ -83,14 +83,17 @@
 			<artifactId>selenium-java</artifactId>
 			<version>4.16.1</version>
 		</dependency>
-		
 		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
 			<version>5.6.3</version>
 		</dependency>
-		
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-testng</artifactId>
+			<version>7.15.0</version>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 		<dependency>
 			<groupId>org.testng</groupId>

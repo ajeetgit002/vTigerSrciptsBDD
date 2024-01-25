@@ -26,7 +26,7 @@ Scenario: Search new leads which is create By user
         And User Select first Name From DropDown 
         And User Clcik On Search Button
         Then User Found Leads Name In Table 
-@Sanity
+
 Scenario: User Succefully Delete New Leads
          When User Enter First Name In Search Text Box
         And User Select first Name From DropDown 
