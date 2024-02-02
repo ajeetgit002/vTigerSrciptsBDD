@@ -117,7 +117,7 @@ public class StepDefintion {
 	@When("User Pass full info for create new Leads")
 	public void user_pass_full_info_for_create_new_leads() {
 		util.selectByValue(By.xpath("//select[@name='salutationtype' ]"), "Mr.", "Name Title");
-		util.inputValue("First Name", By.name("firstname"), "Ajeet Kumar");
+		util.inputValue("First Name", By.name("firstname"), "sadhu ");
 		util.inputValue("Last Name", By.name("lastname"), "Yadav");
 		util.inputValue("Company Name", By.name("company"), "Google");
 		util.inputValue("Title", By.id("designation"), "QA engeneer");
