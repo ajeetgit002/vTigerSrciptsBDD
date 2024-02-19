@@ -37,6 +37,7 @@ import com.google.common.io.Files;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 
 public class webUtil {
@@ -114,19 +115,19 @@ public class webUtil {
 			switch (browser.toLowerCase()) {
 
 			case "chrome":
-				System.setProperty("webdriver.chrome.driver", "Drivers\\chromedriver.exe");
+				WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver();
 				
 				extTest.log(Status.INFO, "Browser : launched Successfully ");
 
 				break;
 			case "firefox":
-				System.setProperty("webdriver.gecko.driver", "Drivers\\geckodriver.exe");
+				WebDriverManager.firefoxdriver().setup();
 				driver = new FirefoxDriver();
 				extTest.log(Status.INFO, "Browser : launched Successfully ");
 				break;
 			case "edge":
-				System.setProperty("webdriver.edge.driver", "Drivers\\msedgedriver.exe");
+				WebDriverManager.edgedriver().setup();
 				driver = new EdgeDriver();
 				extTest.log(Status.INFO, "Browser : launched Successfully ");
 				break;
