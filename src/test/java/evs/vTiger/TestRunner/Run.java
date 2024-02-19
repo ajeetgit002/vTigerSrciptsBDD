@@ -1,21 +1,26 @@
-package evs.vTiger.TestRunner;
+ package evs.vTiger.TestRunner;
 
 
-import io.cucumber.testng.AbstractTestNGCucumberTests;
-import io.cucumber.testng.CucumberOptions;
+import org.junit.runner.RunWith;
 
-//@RunWith(Cucumber.class)
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+
+
+
+
+@RunWith(Cucumber.class)
 @CucumberOptions(
 		
 		features= {".//Feature/Loginfeature.feature"},
 		glue= "evs\\vTiger\\StpeDefi",
-		dryRun=false,
-				plugin={"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
-		//plugin= {"pretty","html:target/Reports/reports.html"}
+		dryRun=true,
+				//plugin={"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
+		plugin= {"pretty","html:target/Reports/reports.html"}
 		)
 
 
-public class Run extends AbstractTestNGCucumberTests {
+public class Run {
 	 
 	
 	
